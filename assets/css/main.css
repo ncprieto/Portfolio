@@ -72,6 +72,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	display: block;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -5053,12 +5060,12 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 21rem;
-			height: 21rem;
+			width: 100%;
+			height: 100%;
 			border-radius: 100%;
 			margin: 0 3.5rem 2rem 0;
 		}
-
+		 
 			.spotlight.style2 .image img {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
