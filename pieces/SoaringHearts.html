@@ -40,9 +40,15 @@
 				<!-- WHAT IS THE GAME/DETAILS -->
                 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
                     <div class="content">
-                        <h2><b>What is GAME?</b></h2>
+                        <h2><b>What is Soaring Hearts?</b></h2>
                         <p>
-                            game genre, timeline, team size, etc.
+                            Soaring Hearts is a <b>local co-op puzzle platformer</b> where two flightless birds ascend
+                            a mountaintop by solving platforming puzzles. It takes great inspiration for titles such as
+                            <b>Celeste</b> and <b>Super Meat Boy</b>.
+                        </p>
+                        <p>
+                            Soaring Hearts' development consisted of <b>8 people</b> and <b>was created in a single week</b>. It is 
+                            playable in browser on <a href="https://sunnieside-boi.itch.io/soaring-hearts" target="_blank">Itch.IO</a>.
                         </p>
                     </div>
                     <div class="image">
@@ -55,7 +61,11 @@
                     <div class="content">
                         <h2><b>My Contributions</b></h2>
                         <p>
-                            general list of contributions
+                            My main contribution to <b>Soaring Hearts</b> was the creation of the <b>carrying and throwing mechanic</b>
+                            where players could <b>pick up and hurl one another</b>. I also created the interactions <b>that result from
+                            throwing a player and being thrown</b> such as <b>standing on top of the player that was lodged into a wall</b> and
+                            <b>becoming unstuck after being thrown</b>. I was also the teams <b>lead QA tester</b> and fixed issues other
+                            developers and players ran into.
                         </p>
                     </div>
                     <div class="image">
@@ -63,7 +73,43 @@
                     </div>
                 </section>
 
-                <!-- CONTRIBUTION FIELD -->
+                <!-- PICKING UP AND THROWING -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2><b>Picking Up and Throwing</b></h2>
+                        <p>
+                            The main mechanic of Soaring Hearts' <b>platforming puzzles</b> involves players picking up and throwing 
+                            each other <b>to clear gaps</b>, <b>use one another as platforms</b>, and <b>to reach vertical spaces</b>
+                            that would be otherwise inaccessible. I created the technical backing required for this mechanic <b>through 
+                            various states within an internal movement state machine</b> that dictates the movment of each player 
+                            along with built-in functions <b>that apply forces to Unity's Rigidbody2D</b>. A hitbox extending just 
+                            beyond each player <b>determines whether or not a player can "grab" the other and carry them around</b> until they
+                            decide to throw them.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <video src="" autoplay muted loop></video>
+                    </div>
+                </section>
+
+                <!-- MAKESHIFT PLATFORMS AND GETTING UNSTUCK -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2><b>Makeshift Platforms and Getting Unstuck</b></h2>
+                        <p>
+                            I also created the interaction where <b>after a player is thrown into a wall, their beak becomes
+                            lodged into it</b> creating a platform for the other player to stand on. This was made possible by
+                            <b>disabling the thrown players gravity and velocity</b> the moment they come in contact with a wall
+                            as well as <b>nullifying any forces acting upon the player</b>. Players who are stuck <b>can activate
+                            their grab button to spring themselves up and away from the wall</b> gaining a vertical boost.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <video src="" autoplay muted loop></video>
+                    </div>
+                </section>
+
+                <!-- BUG FIXING AND QA -->
                 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
                     <div class="content">
                         <h2><b>Contribution Field</b></h2>
