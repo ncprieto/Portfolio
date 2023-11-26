@@ -39,9 +39,17 @@
 				<!-- WHAT IS THE GAME/DETAILS -->
                 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
                     <div class="content">
-                        <h2><b>What is GAME?</b></h2>
+                        <h2><b>What is A Slime's Quest?</b></h2>
                         <p>
-                            game genre, timeline, team size, etc.
+                            <b>A Slime's Quest</b> is a <b>single-player dungeon crawler</b> where you navigate your way
+                            through <b>doorways of various sizes</b> by <b>shrinking and growing</b> in size <b>by consuming or
+                            touching mobs and goons</b>. It features a <b>procedurally-generated dungeon</b> populated with
+                            <b>environmental puzzles and boss encounters</b>.
+                        </p>
+                        <p>
+                            This project was created over the course of <b>2 weeks</b> with the help of <b>two other developers</b>.
+                            A Slime's Quest was made using the <a href="https://phaser.io/" target="_blank"><b>Phaser 3 Engine</b></a> and is playable
+                            <a href="https://ncprieto.github.io/A-Slimes-Quest/" target="_blank">in browser</a>.
                         </p>
                     </div>
                     <div class="image">
@@ -54,7 +62,10 @@
                     <div class="content">
                         <h2><b>My Contributions</b></h2>
                         <p>
-                            general list of contributions
+                            My main contributions to <b>A Slime's Quest</b> were the development of the <b>algorithm that procedurally-generates
+                            each dungeon</b>, <b>designing and programming</b> the <b>environmental puzzles</b>, and <b>creating the first stages'
+                            boss, the Rock Boss</b>. This was my first time creating any sort of <b>algorithm that generates a playable space</b> 
+                            which proved to be a difficult challenge as there <b>were several bugs and roadblocks that slowed development</b>.
                         </p>
                     </div>
                     <div class="image">
@@ -62,10 +73,82 @@
                     </div>
                 </section>
 
-                <!-- CONTRIBUTION FIELD -->
+                <!-- PROCEDURALLY GENERATED DUNGEON -->
                 <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
                     <div class="content">
-                        <h2><b>Contribution Field</b></h2>
+                        <h2><b>Procedurally Generated Dungeon</b></h2>
+                        <p>
+                            A Slime's Quest features <b>two playable dungeons</b> that are both <b>procedurally-generated</b> using and algorithm
+                            that I developed. The foundation of the algorithm relies on <b>randomly populating a 2D array with "rooms"</b> that are
+                            essentially <b>playable scenes</b>. Each scene within the array contains data relating to how <b>how many exits the "room"
+                            has</b>, <b>the directions in which the exits lead (either Up, Down, Left or Right)</b>, <b>the size of the doorway 
+                            depicting an exit</b>, <b>how many enemies are inside the room</b>, <b>whether or not the room is a puzzle, boss, or normal
+                            room</b>, etc. This algorithm was the <b>result of lots of trial and error</b> in attempting to populate the array with a
+                            string <b>denoting exit directions</b> that eventually developed into <b>storing playable scenes with specialized data</b>.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <video src="" autoplay muted loop></video>
+                    </div>
+                </section>
+
+                <!-- CREATING THE DUNGEON -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2><b>Creating The Dungeon</b></h2>
+                        <p>
+                            The algorithm for procedurally generating each dungeon <b>first creates a 2D array</b> containing data objects
+                            that hold information about <b>what directions each room has</b>, <b>what type of room it is</b>, and <b>the
+                            playable scene</b>. The algorithm <b>works outwards from a centralized index</b> by <b>creating exits
+                            in a starting room</b>, <b>accessing the rooms to which it has exits towards</b>, <b>making an exit towards the
+                            previous room</b>, and then <b>determining if more exits will be made for the newly accessed room</b>. If more exits
+                            are to be made, <b>it will repeat the process above</b> and if not it will <b>return to the room that previously accessed
+                            the current room eventually returning to the starting room</b>. This process creates a foundation for understanding <b>the
+                            directions in which each room has exits towards</b> and is <b>utilized later on to create doorways</b> 
+                            along with <b>loading and unloading scenes when entering and exiting a room</b>.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <video src="" autoplay muted loop></video>
+                    </div>
+                </section>
+
+                <!-- SPECIALIZED ROOMS AND SCENE CREATION -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2><b>Specialized Rooms and Scene Creation</b></h2>
+                        <p>
+                            After the algorithm has retuned to the starting room, it then <b>finds candidates for
+                            the boss room and puzzle rooms</b> and <b>then alters the data object holding the type of room</b> within the
+                            appropriate index of the array. It will then iterate through the array <b>creating scenes pertaining to each
+                            room's type</b> and <b>updates the object containing the scene with this newly created scene</b>. When exiting a room
+                            during gameplay, <b>the scene pertaining to the room being entered is loaded after unloading the current room's scene</b>.
+                            Phaser 3's scene data storing <b>eased the process of preserving the state of a room</b> and <b>allowed for previously visted rooms
+                            to appear just at they were left when revisited</b>.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <video src="" autoplay muted loop></video>
+                    </div>
+                </section>
+
+                <!-- PUZZLE DESIGN AND CREATION -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2><b>Puzzle Design and Creation</b></h2>
+                        <p>
+                            specifics of contribution
+                        </p>
+                    </div>
+                    <div class="image">
+                        <video src="" autoplay muted loop></video>
+                    </div>
+                </section>
+
+                <!-- STAGE 1: ROCK BOSS -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2><b>Stage 1: Rock Boss</b></h2>
                         <p>
                             specifics of contribution
                         </p>
