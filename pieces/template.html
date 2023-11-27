@@ -9,11 +9,20 @@
 		<title>GAME NAME</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" 
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+			crossorigin="anonymous">
+		<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+				emailjs.init("oXSbQJZgI0qfoLfrC");
+			})();
+		</script>
 	</head>
 	<body class="is-preload">
-
+        <link rel="stylesheet" href="../assets/css/main.css" />
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
@@ -135,29 +144,27 @@
                         </div>
                 </section>
 
-				<!-- CONTACT SECTION -->
+				<!-- Contact -->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
+							<h2><b>Get in touch</b></h2>
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
+										<input type="text" id="name"/>
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
+										<input type="email" id="email"/>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
+										<textarea id="message" rows="6"></textarea>
 									</div>
 								</div>
 								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+									<button onclick="sendEmail()">Submit</button>
 								</ul>
-							</form>
 						</div>
 					</section>
 
@@ -176,6 +183,7 @@
 			</div>
 
 		<!-- Scripts -->
+            <script src="../index.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
