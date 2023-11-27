@@ -32,7 +32,7 @@
 							</ul>
 						</div>
 						<div class="image">
-                            <video src="" autoplay muted loop></video>
+                            <video src="../images/ASlimesQuest/Videos/ASQlanding.mp4" autoplay muted loop></video>
 						</div>
 					</section>
 
@@ -53,7 +53,7 @@
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQwhat.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
@@ -69,7 +69,7 @@
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQmycons.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
@@ -88,7 +88,7 @@
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQprocCON.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
@@ -98,18 +98,18 @@
                         <h2><b>Creating The Dungeon</b></h2>
                         <p>
                             The algorithm for procedurally generating each dungeon <b>first creates a 2D array</b> containing data objects
-                            that hold information about <b>what directions each room has</b>, <b>what type of room it is</b>, and <b>the
+                            that hold information about <b>what directions the room exits towards</b>, <b>what type of room it is</b>, and <b>the
                             playable scene</b>. The algorithm <b>works outwards from a centralized index</b> by <b>creating exits
                             in a starting room</b>, <b>accessing the rooms to which it has exits towards</b>, <b>making an exit towards the
                             previous room</b>, and then <b>determining if more exits will be made for the newly accessed room</b>. If more exits
                             are to be made, <b>it will repeat the process above</b> and if not it will <b>return to the room that previously accessed
-                            the current room eventually returning to the starting room</b>. This process creates a foundation for understanding <b>the
+                            the current room, eventually returning to the starting room</b>. This process creates a foundation for understanding <b>the
                             directions in which each room has exits towards</b> and is <b>utilized later on to create doorways</b> 
                             along with <b>loading and unloading scenes when entering and exiting a room</b>.
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQcreateCON.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
@@ -128,20 +128,25 @@
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQspecialCON.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
                 <!-- PUZZLE DESIGN AND CREATION -->
-                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                     <div class="content">
                         <h2><b>Puzzle Design and Creation</b></h2>
                         <p>
-                            specifics of contribution
+                            Later in development the team decided that we wanted to add <b>some sort of interactable aspect of gameplay</b> to
+                            <b>compensate for the lack of content</b> within the game. We ultimately decided on creating <b>environmental puzzles</b>
+                            for players to solve while traversing each dungeon. I created the <b>technical backing for designating whether or not
+                            a room contains a puzzle</b>, <b>the mechanics necessary for interacting with a puzzle</b>, and <b>the conditions needed
+                            in order to consider a puzzle to be solved</b>. Puzzles essentially work by <b>pushing cubes to specific white spaces found
+                            on the floor of the room</b> and <b>reward players with the chance to purchase powerups</b>.
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQpuzzleCON.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
@@ -150,11 +155,18 @@
                     <div class="content">
                         <h2><b>Stage 1: Rock Boss</b></h2>
                         <p>
-                            specifics of contribution
+                            Each dungeon, or stage, within <b>A Slime's Quest</b> features a <b>boss encounter</b> that players must overcome
+                            in order to progress. I was responsible for <b>designing and creating stage 1's boss, the Rock Boss</b>. The Rock Boss'
+                            design went through a few early iterations that revolved around <b>obstacles being dropped onto the player</b> such as 
+                            once central entity controlling several smaller ones that attempt to fall on top of the player. This iteration proved 
+                            to be challenging programming-wise and was <b>ultimately scrapped for the Rock Boss' current iteration</b>. I really 
+                            leaned into the idea of having <b>multiple entities chasing the player around</b> and decided to give each of them differing
+                            stats relating to <b>speed</b>, <b>how fast they track the player</b>, etc. I later combined these entities with some
+                            <b>puzzle solving</b> to add to the <b>overall tension of the encounter</b>.
                         </p>
                     </div>
                     <div class="image">
-                        <video src="" autoplay muted loop></video>
+                        <video src="../images/ASlimesQuest/Videos/ASQrockCON.mp4" autoplay muted loop></video>
                     </div>
                 </section>
 
@@ -163,59 +175,59 @@
                     <!-- Gallery -->
                         <div class="gallery style2 medium lightbox onscroll-fade-in">
                             <article>
-                                <a href="../images/gallery/fulls/01.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/01.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQ.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQ.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Ipsum Dolor</h3>
+                                    <h3>The main menu of A Slime's Quest</h3>
                                 </div>
                             </article>
                             <article>
-                                <a href="../images/gallery/fulls/02.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/02.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQsc1.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQsc1.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Feugiat Lorem</h3>
+                                    <h3>The starting room of Stage 1.</h3>
                                 </div>
                             </article>
                             <article>
-                                <a href="../images/gallery/fulls/03.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/03.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQsc4.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQsc4.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Magna Amet</h3>
+                                    <h3>Outrunning goons in Stage 2.</h3>
                                 </div>
                             </article>
                             <article>
-                                <a href="../images/gallery/fulls/04.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/04.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQsc3.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQsc3.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Sed Tempus</h3>
+                                    <h3>Outrunning the Rock Boss of Stage 1. Attempt to solve the puzzle.</h3>
                                 </div>
                             </article>
                             <article>
-                                <a href="../images/gallery/fulls/05.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/05.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQsc5.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQsc5.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Ultrices Magna</h3>
+                                    <h3>Outsmarting and dodging mobs early on in Stage 1.</h3>
                                 </div>
                             </article>
                             <article>
-                                <a href="../images/gallery/fulls/06.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/06.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQsc6.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQsc6.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Sed Tempus</h3>
+                                    <h3>The solution to a puzzle found within Stage 2.</h3>
                                 </div>
                             </article>
                             <article>
-                                <a href="../images/gallery/fulls/07.jpg" class="image">
-                                    <img src="../images/gallery/thumbs/07.jpg" alt="" />
+                                <a href="../images/ASlimesQuest/Screenshots/ASQsc2.png" class="image">
+                                    <img src="../images/ASlimesQuest/Screenshots/ASQsc2.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Ipsum Lorem</h3>
+                                    <h3>The starting room of Stage 2. The end is near.</h3>
                                 </div>
                             </article>
                         </div>
