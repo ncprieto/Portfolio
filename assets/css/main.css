@@ -7,6 +7,96 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Add a black background color to the top navigation */
+.topnav {
+	min-height: 5vh;
+	background-color: white;
+	overflow: hidden;
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	justify-content: space-around;
+	border-bottom: solid 1px;
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.topnav.onload-content-fade-right {
+	-moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+}
+
+body.is-preload .topnav.onload-content-fade-right{
+	opacity: 0;
+}
+
+.topnav.onload-content-fade-right .content {
+	-moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out, -ms-transform 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+}
+
+body.is-preload .topnav.onload-content-fade-right .content {
+	-moz-transform: translateX(-1rem);
+	-webkit-transform: translateX(-1rem);
+	-ms-transform: translateX(-1rem);
+	transform: translateX(-1rem);
+	opacity: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	color: black;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 1em;
+	font: inherit;
+}
+
+.topnav a.main {
+	float: left;
+	left: 25px;
+}
+
+.topnav a.right {
+	float: right;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: black;
+	color: white;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 1em;
+	font: inherit;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3302,6 +3392,17 @@ video {
 		opacity: 0;
 	}
 
+	.banner.onload-image-fade-in .image video {
+		-moz-transition: opacity 0.75s ease-in-out;
+		-webkit-transition: opacity 0.75s ease-in-out;
+		-ms-transition: opacity 0.75s ease-in-out;
+		transition: opacity 0.75s ease-in-out;
+	}
+
+	body.is-preload .banner.onload-image-fade-in .image video {
+		opacity: 0;
+	}
+
 	.banner.onscroll-content-fade-up .content {
 		-moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
@@ -3646,7 +3747,7 @@ video {
 		}
 
 		.banner.style1.fullscreen {
-			min-height: 100vh;
+			min-height: 95vh;
 		}
 
 			@media screen and (orientation: portrait) {
@@ -3826,7 +3927,7 @@ video {
 		}
 
 		.banner.style2.fullscreen {
-			min-height: 100vh;
+			min-height: 95vh;
 		}
 
 		.banner.style2.orient-left {
@@ -4903,6 +5004,17 @@ video {
 	}
 
 	.spotlight.onscroll-image-fade-in.is-inactive .image img {
+		opacity: 0;
+	}
+
+	.spotlight.onscroll-image-fade-in .image video {
+		-moz-transition: opacity 0.75s ease-in-out;
+		-webkit-transition: opacity 0.75s ease-in-out;
+		-ms-transition: opacity 0.75s ease-in-out;
+		transition: opacity 0.75s ease-in-out;
+	}
+
+	.spotlight.onscroll-image-fade-in.is-inactive .image video {
 		opacity: 0;
 	}
 
