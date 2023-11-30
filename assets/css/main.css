@@ -9,15 +9,68 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-	min-height: 5vh;
+	height: 5vh;
 	background-color: white;
-	overflow: hidden;
-	z-index: 1;
 	position: sticky;
+	z-index: 1;
 	top: 0;
-	justify-content: space-around;
 	border-bottom: solid 1px;
 	border-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.topnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.topnav ul li {
+	display: inline-block;
+	font-size: 1em;
+	line-height: 5vh;
+	text-align: center;
+	padding-left: 0;
+	width: 10vw;
+}
+
+/* Style the links inside the navigation bar */
+.topnav ul li a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	transition: .3s background-color;
+	padding: 0;
+}
+
+.topnav li a:hover {
+	background-color: #000000;
+	color:#ffffff;
+} 
+
+.topnav ul li ul {
+	list-style-type: none;
+	position: absolute;
+	display: none;
+	text-align: center;
+}
+
+.topnav li:hover ul {
+	display: block;
+}
+
+.topnav ul li ul li {
+	background-color: #ffffff;
+	display: block;
+	float: none !important;
+	line-height: 5vh;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-right: solid 1px;
+	border-color: rgba(0, 0, 0, 0.2);
+	width: 10vw;
+	height: 5vh;
 }
 
 .topnav.onload-content-fade-right {
@@ -44,57 +97,6 @@ body.is-preload .topnav.onload-content-fade-right .content {
 	-ms-transform: translateX(-1rem);
 	transform: translateX(-1rem);
 	opacity: 0;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-	color: black;
-	text-align: center;
-	padding: 16px 16px;
-	text-decoration: none;
-	font-size: 1em;
-	font: inherit;
-}
-
-.topnav a.main {
-	float: left;
-	left: 25px;
-}
-
-.topnav a.right {
-	float: right;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-	background-color: black;
-	color: white;
-}
-
-.dropdown {
-	display: inline-block;
-	position: relative;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	width: 100%;
-	overflow: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-	color: black;
-	text-align: center;
-	padding: 16px 16px;
-	text-decoration: none;
-	font-size: 1em;
-	font: inherit;
 }
 
 html, body, div, span, applet, object,
