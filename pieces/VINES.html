@@ -96,8 +96,7 @@
                             procedurally generates</b> a randomized layout of the game's playable space.
                             I also <b>created the inventory system</b> that keeps track of what items the
                             player has picked up throughout the game as well as <b>mechanics</b> relating
-                            to the <b>Personal Video Test Monitor (PVTM)</b> and the <b>Ground-Fault Circut Interrupter</b> 
-                            items.
+                            to the <b>Personal Video Test Monitor (PVTM)</b> and the <b>Ground-Fault Circut Interrupter</b>.
                         </p>
                     </div>
                     <div class="image">
@@ -130,15 +129,16 @@
                     <div class="content">
                         <h2><b>Setting Up Warehouse Maker</b></h2>
                         <p>
-                            As mentioned previously, <b>Warehouse Maker randomly fills out a
+                            As mentioned previously, <b>Warehouse Maker randomly fills a
                             2D array with "rooms"</b> and then places them in the world, but a
                             bit more is necessary beforehand. VINES features notable
                             <b>"Landmark" rooms</b> that contain items, have special interactions, or
                             are necessary for progression. <b>Warehouse Maker randomly places these
-                            rooms first</b> to ensure that they each have their own spot so that their
+                            rooms first</b> to ensure that their
                             existence <b>isn't left up to chance</b> when running the bulk of the alogrithm.
-                            Precautions were put in place to guarantee when placing "Landmark" rooms
-                            that other rooms that had already been placed <b>would not be overwritten</b>.
+                            Precautions were put in place to guarantee that "Landmark" rooms that had already
+                            been placed <b>would not be overwritten</b> when placing others and when filling
+                            out the array.
                         </p>
                     </div>
                     <div class="image">
@@ -175,7 +175,7 @@
                             Lastly, Warehouse Maker <b>will clean up any dead ends</b> by attempting to connect
                             them to nearby rooms. If a room only has an upwards exit, <b>it attempts to
                             connect to a room either to the left, right, or below</b> it in the array.
-                            If successful <b>then we find the next dead end</b>, if not then it chooses
+                            If successful <b>then we find the next dead end</b>; if not then it chooses
                             an exit direction it doesn't have and <b>creates a new room</b> with the corresponding 
                             exit thus <b>forming a new dead end</b>. The new dead end <b>now replaces the current
                             one and the process above repeats itself</b>. After all dead ends have been fixed, 
@@ -216,7 +216,7 @@
                                     <img src="../images/VINES/Screenshots/VINESsc1.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>A briefing w heading down to Underground Facility 17.</h3>
+                                    <h3>Confidential briefing while heading down to Underground Facility 17.</h3>
                                 </div>
                             </article>
                             <article>
@@ -240,7 +240,7 @@
                                     <img src="../images/VINES/Screenshots/VINESsc4.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Classified documents explaining ARTEMIS's research intentions and findings.</h3>
+                                    <h3>Classified documents explaining ARTEMIS' research intentions and findings.</h3>
                                 </div>
                             </article>
                             <article>
@@ -264,7 +264,7 @@
                                     <img src="../images/VINES/Screenshots/VINESsc7.png" alt="" />
                                 </a>
                                 <div class="caption">
-                                    <h3>Remnants of the previous team sent down to document Splitjaw.</h3>
+                                    <h3>Remnants of the previous contractors, Alpha Team.</h3>
                                 </div>
                             </article>
                         </div>
