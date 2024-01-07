@@ -24,15 +24,15 @@
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	font-size: 1em;
 }
 
 .topnav ul li {
 	display: inline-block;
-	font-size: 1em;
-	line-height: 5vh;
 	text-align: center;
 	padding-left: 0;
 	width: 6vw;
+	line-height: 5vh;
 }
 
 /* Style the links inside the navigation bar */
@@ -41,7 +41,7 @@
 	color: black;
 	text-decoration: none;
 	transition: .3s background-color;
-	padding: 0;
+	height: 5vh;
 }
 
 .topnav li a:hover {
@@ -64,13 +64,129 @@
 	background-color: #ffffff;
 	display: block;
 	float: none !important;
-	line-height: 5vh;
 	border-bottom: solid 1px;
 	border-left: solid 1px;
 	border-right: solid 1px;
 	border-color: rgba(0, 0, 0, 0.2);
-	width: 6vw;
-	height: 5vh;
+}
+
+.topnav ul li ul li a {
+	height: auto;
+}
+
+@media screen and (max-width: 2240px) {
+	.topnav-name ul li {
+		width: 9vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 6vw;
+	}
+
+	.topnav ul li ul li {
+		line-height: 3.5vh;
+	}
+}
+
+@media screen and (max-width: 1680px) {
+	.topnav-name ul li {
+		width: 10vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 6vw;
+	}
+
+	.topnav ul li ul li {
+		line-height: 3vh;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.topnav ul li {
+		width: 10vw;
+	} 
+	.topnav-navbar ul li {
+		width: 7vw;
+	}
+
+	.topnav ul li ul li {
+		line-height: 2.5vh;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.topnav ul li {
+		width: 10vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 7vw;
+	}
+
+	.topnav ul li ul li {
+		line-height: 2vh;
+	}
+}
+
+@media screen and (max-width: 896px) {
+	.topnav-name ul li {
+		width: 12vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 9vw;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.topnav-name ul li {
+		width: 15vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 11vw;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.topnav-name ul li {
+		width: 17vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.topnav-name ul li {
+		width: 20vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.topnav-name ul li {
+		width: 23vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 15vw;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.topnav-name ul li {
+		width: 25vw;
+	}
+
+	.topnav-navbar ul li {
+		width: 17vw;
+	}
 }
 
 .topnav.onload-content-fade-right {
