@@ -5253,7 +5253,7 @@ video {
 		@media screen and (max-width: 1280px) {
 
 			.spotlight.style1 .content {
-				padding: 2rem 2rem 1rem 2rem ;
+				padding: 2rem 2rem 1.75rem 2rem ;
 			}
 
 			.spotlight.style1 .image {
@@ -5264,7 +5264,7 @@ video {
 		}
 
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1180px) {
 
 		.spotlight.style1 {
 			-moz-flex-direction: column-reverse;
@@ -5295,7 +5295,7 @@ video {
 			flex-direction: row-reverse;
 		}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1180px) {
 
 		.spotlight.style1.orient-right {
 			-moz-flex-direction: column-reverse;
